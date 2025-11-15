@@ -1,0 +1,47 @@
+{
+  "actorSpecification": 1,
+  "name": "b2b-lead-generator-it-recruiting",
+  "version": "1.0.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "dockerfile": "./Dockerfile",
+  "readme": "./README.md",
+  "input": "./.actor/input_schema.json",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": [
+              "Unternehmen",
+              "Standort",
+              "Webseiten_URL",
+              "Anrede_AP1",
+              "Vorname_AP1",
+              "Nachname_AP1",
+              "Email_AP1",
+              "Position_AP1",
+              "Job1_Titel",
+              "Job1_URL"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "Unternehmen": {
+                "label": "Unternehmen",
+                "format": "text"
+              },
+              "Standort": {
+                "label": "Standort",
+                "format": "text"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

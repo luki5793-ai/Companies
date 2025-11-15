@@ -1,0 +1,29 @@
+{
+  "searchQueries": [
+    "Software Entwickler",
+    "DevOps Engineer",
+    "Java Entwickler",
+    "Python Developer",
+    "Data Scientist"
+  ],
+  "locations": [
+    "Köln",
+    "Düsseldorf",
+    "Bonn",
+    "Dortmund",
+    "Essen"
+  ],
+  "postalCodeFilter": ["5"],
+  "maxResults": 50,
+  "maxContactsPerCompany": 2,
+  "maxJobsPerCompany": 3,
+  "excludeRecruitmentAgencies": true,
+  "enableContactEnrichment": true,
+  "jobPortals": [
+    "indeed",
+    "stepstone"
+  ],
+  "jobDateRange": 90,
+  "useProxy": true,
+  "rateLimitDelay": 2.5
+}

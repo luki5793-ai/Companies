@@ -1,0 +1,122 @@
+{
+  "title": "B2B Lead Generator - IT Recruiting",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "searchQueries": {
+      "title": "IT Job Suchbegriffe",
+      "type": "array",
+      "description": "Suchbegriffe für IT-Positionen (z.B. 'Software Entwickler', 'DevOps Engineer')",
+      "editor": "stringList",
+      "default": [
+        "Software Entwickler",
+        "IT Administrator",
+        "DevOps Engineer",
+        "Data Scientist",
+        "Java Entwickler",
+        "Python Developer"
+      ],
+      "prefill": [
+        "Software Entwickler",
+        "DevOps Engineer"
+      ]
+    },
+    "locations": {
+      "title": "Standorte",
+      "type": "array",
+      "description": "Städte im PLZ-Gebiet 5xxxx (NRW)",
+      "editor": "stringList",
+      "default": [
+        "Köln",
+        "Bonn",
+        "Düsseldorf",
+        "Dortmund",
+        "Essen",
+        "Duisburg",
+        "Bochum",
+        "Wuppertal",
+        "Bielefeld"
+      ],
+      "prefill": [
+        "Köln",
+        "Bonn",
+        "Düsseldorf"
+      ]
+    },
+    "postalCodeFilter": {
+      "title": "PLZ-Filter (erste Ziffer)",
+      "type": "array",
+      "description": "Filter nach PLZ-Anfangsziffer (z.B. '5' für 50000-59999)",
+      "editor": "stringList",
+      "default": ["5"],
+      "prefill": ["5"]
+    },
+    "maxResults": {
+      "title": "Maximale Anzahl Firmen",
+      "type": "integer",
+      "description": "Maximale Anzahl zu extrahierender Firmen",
+      "default": 50,
+      "minimum": 1,
+      "maximum": 500
+    },
+    "maxContactsPerCompany": {
+      "title": "Max. Kontakte pro Firma",
+      "type": "integer",
+      "description": "Maximale Anzahl Ansprechpartner pro Firma (1-2)",
+      "default": 2,
+      "minimum": 1,
+      "maximum": 2
+    },
+    "maxJobsPerCompany": {
+      "title": "Max. Jobs pro Firma",
+      "type": "integer",
+      "description": "Maximale Anzahl Job-Listings pro Firma",
+      "default": 3,
+      "minimum": 1,
+      "maximum": 5
+    },
+    "excludeRecruitmentAgencies": {
+      "title": "Personalvermittlungen ausschließen",
+      "type": "boolean",
+      "description": "Filter für Headhunter, Zeitarbeit und Personalberatungen",
+      "default": true
+    },
+    "enableContactEnrichment": {
+      "title": "Kontakt-Recherche aktivieren",
+      "type": "boolean",
+      "description": "Suche nach Ansprechpartnern (IT-Leiter, HR-Manager)",
+      "default": true
+    },
+    "jobPortals": {
+      "title": "Job-Portale",
+      "type": "array",
+      "description": "Zu scrapende Jobportale",
+      "editor": "stringList",
+      "default": ["indeed", "stepstone", "google"],
+      "prefill": ["indeed", "stepstone"]
+    },
+    "jobDateRange": {
+      "title": "Job-Zeitraum (Tage)",
+      "type": "integer",
+      "description": "Berücksichtige Jobs der letzten X Tage",
+      "default": 90,
+      "minimum": 1,
+      "maximum": 365
+    },
+    "useProxy": {
+      "title": "Apify Proxy verwenden",
+      "type": "boolean",
+      "description": "Nutze Apify Residential Proxy für Anti-Bot-Schutz",
+      "default": true
+    },
+    "rateLimitDelay": {
+      "title": "Rate Limit (Sekunden)",
+      "type": "number",
+      "description": "Verzögerung zwischen Requests",
+      "default": 2.5,
+      "minimum": 1,
+      "maximum": 10
+    }
+  },
+  "required": ["searchQueries", "locations"]
+}

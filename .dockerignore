@@ -1,0 +1,33 @@
+# Git
+.git/
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+
+# Apify storage (wird zur Runtime gemountet)
+apify_storage/
+storage/
+
+# IDE
+.vscode/
+.idea/
+
+# Outputs
+*.csv
+*.xlsx
+*.log
+
+# Documentation (außer README)
+docs/
+example_output.csv
+
+# Test
+tests/
+.pytest_cache/

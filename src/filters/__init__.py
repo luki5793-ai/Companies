@@ -1,0 +1,1 @@
+"""Filter-Module für Ausschlusskriterien"""

@@ -1,0 +1,32 @@
+# Apify SDK
+apify>=1.6.0
+
+# Web Scraping
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+selenium>=4.15.0
+playwright>=1.40.0
+
+# HTTP Requests
+requests>=2.31.0
+httpx>=0.25.0
+aiohttp>=3.9.0
+
+# Data Processing
+pandas>=2.1.0
+openpyxl>=3.1.0
+
+# Validation
+email-validator>=2.1.0
+phonenumbers>=8.13.0
+
+# Utilities
+python-dotenv>=1.0.0
+tenacity>=8.2.0
+fake-useragent>=1.4.0
+
+# LinkedIn/XING (optional)
+linkedin-api>=2.0.0
+
+# Date handling
+python-dateutil>=2.8.0
